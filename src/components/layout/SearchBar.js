@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useRef } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { searchLogs } from '../../actions/actions';
 
-const SearchBar = () => {
-const[search, setSearch] = useState('')
+const SearchBar = ({ searchLogs }) => {
+  const text = useRef('');
+
   const onChange = e => {
-    setSearch(e.current.value);
+    searchLogs(text.current.value);
   };
 
   return (
@@ -16,7 +19,7 @@ const[search, setSearch] = useState('')
               id='search'
               type='search'
               placeholder='Search Logs..'
-              value={search}
+              ref={text}
               onChange={onChange}
             />
             <label className='label-icon' htmlFor='search'>
@@ -34,4 +37,7 @@ SearchBar.propTypes = {
   searchLogs: PropTypes.func.isRequired
 };
 
-export default SearchBar
+export default connect(
+  null,
+  { searchLogs }
+)(SearchBar);
