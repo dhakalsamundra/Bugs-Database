@@ -3,6 +3,8 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
 
+import store from './store';
+import { Provider } from 'react-redux';
 import SearchBar from './components/layout/SearchBar'
 
 const App = () => {
@@ -11,10 +13,13 @@ const App = () => {
     M.AutoInit();
   });
   return (
+    <Provider store={store}>
       <Fragment>
         <SearchBar />
         
       </Fragment>
+      </Provider>
+
   );
 };
 
