@@ -1,4 +1,4 @@
-import {SET_LOADING} from '../actions/types'
+import {SET_LOADING, LOGS_ERROR, SEARCH_LOGS} from '../actions/types'
 
 const initialState = {
     logs: null,
@@ -14,6 +14,17 @@ const initialState = {
               ...state,
               loading: true
             };
+        case LOGS_ERROR:
+            console.error(action.payload);
+            return {
+                ...state,
+                error: action.payload
+            };
+        case SEARCH_LOGS:
+            return {
+                ...state,
+                logs: action.payload
+                };
           default:
               return state
       }
