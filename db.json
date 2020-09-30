@@ -1,0 +1,40 @@
+{
+  "logs": [
+    {
+      "message": "Need to fix the bugs in ESR applicant",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-09-30T15:43:51.862Z",
+      "id": 2
+    },
+    {
+      "message": "Implement new features in dashboard",
+      "attention": true,
+      "tech": "Samundra Dhakal",
+      "date": "2020-09-30T15:45:09.245Z",
+      "id": 3
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": 2,
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "id": 3,
+      "firstName": "Sara",
+      "lastName": "Wilson"
+    },
+    {
+      "firstName": "Samundra",
+      "lastName": "Dhakal",
+      "id": 4
+    }
+  ]
+}
