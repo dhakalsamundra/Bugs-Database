@@ -1,11 +1,12 @@
 import React, { Fragment, useEffect } from 'react';
+import SearchBar from './components/layout/SearchBar';
+import Logs from './components/logs/Logs';
+import { Provider } from 'react-redux';
+import store from './store';
+
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
-
-import store from './store';
-import { Provider } from 'react-redux';
-import SearchBar from './components/layout/SearchBar'
 
 const App = () => {
   useEffect(() => {
@@ -16,10 +17,11 @@ const App = () => {
     <Provider store={store}>
       <Fragment>
         <SearchBar />
-        
+        <div className='container'>
+          <Logs />
+        </div>
       </Fragment>
-      </Provider>
-
+    </Provider>
   );
 };
 
