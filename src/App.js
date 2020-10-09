@@ -25,6 +25,8 @@ const App = () => {
         <div className='container'>
           <Logs />
           <AddBtn />
+          <AddTechModal />
+          <TechListModal />
           <AddLogModal />
           <EditLogModal />
         </div>
