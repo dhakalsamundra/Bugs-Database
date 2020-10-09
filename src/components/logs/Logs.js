@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import LogItem from './LogItem';
 import Preloader from '../layout/Preloader';
 import { getLogs } from '../../actions/log';
 
@@ -22,8 +23,9 @@ const Logs = ({ log: { logs, loading }, getLogs }) => {
       </li>
       {!loading && logs.length === 0 ? (
         <p className='center'>No logs to show...</p>
-      ) : <p>Log is here</p>
-      }
+      ) : (
+        logs.map(log => <LogItem log={log} key={log.id} />)
+      )}
     </ul>
   );
 };
