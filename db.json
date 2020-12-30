@@ -1,13 +1,6 @@
 {
   "logs": [
     {
-      "message": "Need to fix the bugs in ESR applicant",
-      "attention": false,
-      "tech": "John Doe",
-      "date": "2020-09-30T15:43:51.862Z",
-      "id": 2
-    },
-    {
       "message": "Implement new features in dashboard",
       "attention": true,
       "tech": "Samundra Dhakal",
@@ -15,11 +8,25 @@
       "id": 3
     },
     {
-      "message": "I will be the scrum master for the e2e testing",
-      "attention": false,
-      "tech": "Samundra Dhakal",
-      "date": "2020-10-09T17:38:14.192Z",
+      "message": "Change the ESR applicants checkbox to radio button",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2020-10-09T17:45:40.355Z",
       "id": 4
+    },
+    {
+      "message": "Help Samundra in making new design in figma",
+      "attention": true,
+      "tech": "Sara Wilson",
+      "date": "2020-10-09T17:46:13.476Z",
+      "id": 5
+    },
+    {
+      "message": "Change the font of question in ESR application",
+      "attention": true,
+      "tech": "Samundra Dhakal",
+      "date": "2020-10-09T17:46:42.957Z",
+      "id": 6
     }
   ],
   "techs": [
